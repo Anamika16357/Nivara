@@ -1,0 +1,112 @@
+[
+  {
+    "id": "CRYO-565518",
+    "recipient": "anamikam18aami@gmail.com",
+    "subject": "🦸 Someone Needs Your Help!",
+    "submittedAt": "Thu, Sep 17, 2026, 02:57:09 PM",
+    "visitor": {
+      "name": "anamika",
+      "age": "18 – 24",
+      "location": "Kerala",
+      "email": "anamikam18aami@gmail.com",
+      "grievance": "Career stress"
+    },
+    "deliveryStatus": "delivered",
+    "dispatchedAt": "2026-09-17T09:27:09.886Z"
+  },
+  {
+    "id": "CRYO-755127",
+    "recipient": "anamikam18aami@gmail.com",
+    "subject": "🦸 Someone Needs Your Help!",
+    "submittedAt": "Thu, Sep 17, 2026, 02:56:24 PM",
+    "visitor": {
+      "name": "anamika",
+      "age": "18 – 24",
+      "location": "Kerala",
+      "email": "anamikam18aami@gmail.com",
+      "grievance": "Career stress"
+    },
+    "deliveryStatus": "delivered",
+    "dispatchedAt": "2026-09-17T09:26:24.807Z"
+  },
+  {
+    "id": "CRYO-407198",
+    "recipient": "anamikam18aami@gmail.com",
+    "subject": "🦸 Someone Needs Your Help!",
+    "submittedAt": "Thu, Sep 17, 2026, 02:55:19 PM",
+    "visitor": {
+      "name": "anamika",
+      "age": "18 – 24",
+      "location": "Kerala",
+      "email": "anamikam18aami@gmail.com",
+      "grievance": "Career stress"
+    },
+    "deliveryStatus": "delivered",
+    "dispatchedAt": "2026-09-17T09:25:19.469Z"
+  },
+  {
+    "id": "NIVARA-142831",
+    "recipient": "anamika@example.com",
+    "subject": "Nivara's Guidance — A message for you",
+    "dispatchedAt": "2026-09-17T09:08:02.047Z",
+    "visitorName": "anamika",
+    "problem": "Career uncertainty and placement anxiety",
+    "firstStep": "Start with one single topic today.",
+    "deliveryStatus": "recorded"
+  },
+  {
+    "id": "NIVARA-437492",
+    "recipient": "testuser@example.com",
+    "subject": "Nivara's Guidance — A message for you",
+    "dispatchedAt": "2026-09-17T09:05:50.864Z",
+    "visitorName": "Kavya",
+    "problem": "Placement anxiety and feeling unprepared",
+    "firstStep": "Pick one topic and study it for 25 minutes.",
+    "deliveryStatus": "recorded"
+  },
+  {
+    "id": "CRYO-374023",
+    "recipient": "anamika@example.com",
+    "subject": "🦸 Someone Needs Your Help!",
+    "submittedAt": "Thu, Sep 17, 2026, 10:28:16 AM",
+    "visitor": {
+      "name": "aami",
+      "age": "18 – 24",
+      "location": "kerala",
+      "email": "anamikam18aami@gmail.com",
+      "grievance": "[State: Overwhelmed & stressed ⚡] i am feeling stressed"
+    },
+    "deliveryStatus": "delivered",
+    "dispatchedAt": "2026-09-17T04:58:16.958Z"
+  },
+  {
+    "id": "CRYO-457588",
+    "recipient": "anamika@example.com",
+    "subject": "🦸 Someone Needs Your Help!",
+    "submittedAt": "Wed, Sep 16, 2026, 10:44:13 PM",
+    "visitor": {
+      "name": "Anamika",
+      "age": "18 – 24",
+      "location": "kerala",
+      "email": "anamikam18aami@gmail.com",
+      "grievance": "[State: Carrying a quiet burden 😔] I feel alone with what I am facing"
+    },
+    "deliveryStatus": "delivered",
+    "dispatchedAt": "2026-09-16T17:14:13.464Z"
+  },
+  {
+    "id": "CRYO-918234",
+    "recipient": "anamika@example.com",
+    "subject": "🦸 Someone Needs Your Help!",
+    "submittedAt": "September 16, 2026, 6:00 PM",
+    "visitor": {
+      "name": "Elena Rostova",
+      "age": "24",
+      "location": "Kyoto, Japan",
+      "email": "elena@sanctuary.realm",
+      "grievance": "I stood up against injustice in my district and was silenced. I need Nivara to hold my voice."
+    },
+    "deliveryStatus": "delivered",
+    "dispatchedAt": "2026-09-16T12:30:42.278Z"
+  }
+]

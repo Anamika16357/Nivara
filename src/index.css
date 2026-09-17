@@ -1,0 +1,316 @@
+@import "tailwindcss";
+
+@theme inline {
+  --ease-out-back: var(--ease-out-back);
+  --ease-out-expo: var(--ease-out-expo);
+  --transition-slow: var(--transition-slow);
+  --transition-medium: var(--transition-medium);
+  --transition-fast: var(--transition-fast);
+  --panel-padding: var(--panel-padding);
+  --space-12: var(--space-12);
+  --space-10: var(--space-10);
+  --space-8: var(--space-8);
+  --space-6: var(--space-6);
+  --space-5: var(--space-5);
+  --space-4: var(--space-4);
+  --space-3: var(--space-3);
+  --space-2: var(--space-2);
+  --space-1: var(--space-1);
+  --text-mega: var(--text-mega);
+  --font-serif: var(--font-serif);
+  --font-display: var(--font-display);
+  --font-primary: var(--font-primary);
+  --color-color-overlay: var(--color-overlay);
+  --color-color-border: var(--color-border);
+  --color-color-text-muted: var(--color-text-muted);
+  --color-color-text: var(--color-text);
+  --color-color-accent: var(--color-accent);
+  --color-color-secondary: var(--color-secondary);
+  --color-color-primary: var(--color-primary);
+}
+
+:root {
+  --color-primary: #0a0a0a;
+  --color-secondary: #161616;
+  --color-accent: #ff2c2c;
+  --color-text: #f5f5f5;
+  --color-text-muted: rgba(245, 245, 245, 0.7);
+  --color-border: rgba(255, 255, 255, 0.05);
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --font-primary: "Inter", sans-serif;
+  --font-display: "Boldonse", serif;
+  --font-serif: "EB Garamond", serif;
+  --text-xs: 0.7rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.2rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-mega: clamp(7rem, 15vw, 12rem);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+  --panel-padding: 5%;
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+
+  .font-cormorant {
+    font-family: var(--font-cormorant);
+  }
+}
+
+/* Custom Ice & Crystalline Visual Effects for White Luxury Theme */
+.ice-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06), inset 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+.ice-glass-hover {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ice-glass-hover:hover {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(203, 213, 225, 1);
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.12), inset 0 0 20px rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+}
+
+.text-ice-gradient {
+  background: linear-gradient(135deg, #020617 0%, #1e293b 50%, #475569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-frost-silver {
+  background: linear-gradient(180deg, #0f172a 0%, #334155 60%, #64748b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-ice-glow {
+  border-color: rgba(203, 213, 225, 0.8);
+  box-shadow: 0 0 15px rgba(148, 163, 184, 0.15);
+}
+
+/* Ice Shimmering Keyframe Animation */
+@keyframes iceShimmer {
+  0% { opacity: 0.5; filter: brightness(0.95); }
+  50% { opacity: 0.95; filter: brightness(1.1); }
+  100% { opacity: 0.5; filter: brightness(0.95); }
+}
+
+.animate-ice-shimmer {
+  animation: iceShimmer 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.03); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}
+
+/* ==========================================================
+   LENIS SMOOTH SCROLL REQUIRED STYLES
+   ========================================================== */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ==========================================================
+   OSMO / 21ST PARALLAX SCROLLING COMPONENT STYLES
+   ========================================================== */
+.parallax {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.parallax__header {
+  position: relative;
+  height: 180vh;
+  width: 100%;
+}
+
+.parallax__visuals {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax__black-line-overflow {
+  position: absolute;
+  inset: -2px;
+  background-color: #000000;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.parallax__layers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parallax__layer-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.parallax__layer-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.parallax__title {
+  font-family: var(--font-cinzel), 'Cinzel', serif;
+  font-size: clamp(2.5rem, 8vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 0 0 30px rgba(56, 189, 248, 0.35);
+  will-change: transform;
+}
+
+.parallax__fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16rem;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 60%, #000000 100%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.parallax__content {
+  position: relative;
+  z-index: 10;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: #ffffff;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.osmo-icon-svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #38bdf8;
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.6));
+}
+
+.osmo-credits {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background: #000000;
+  color: #64748b;
+  font-size: 0.875rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.osmo-credits__p {
+  margin: 0;
+}
+
+.osmo-credits__p-a {
+  color: #38bdf8;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.osmo-credits__p-a:hover {
+  color: #7dd3fc;
+}
+
